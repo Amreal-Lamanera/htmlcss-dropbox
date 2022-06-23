@@ -161,7 +161,7 @@ h1.container-large {
 }
 
 .plan-body {
-    max-width: 80%;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -212,6 +212,14 @@ li.flex {
     color: var(--blue-btn)
 }
 
+.plan-body.plan-body__main.flex {
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.plan-hor__btn {
+    padding-top: 50px;
+}
 
 /* Footer */
 
