@@ -111,9 +111,9 @@ h1.container-large {
 
 .hero .col.col-8 img {
     position: absolute;
-    /* top: 15px; */
+    top: 15px;
     left: 0;
-    bottom: -100px;
+    /* bottom: -100px; */
 }
 
 /* .hero .row.row-colverse {
