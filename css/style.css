@@ -193,6 +193,11 @@ li.flex {
     display: block;
 }
 
+.plan__buy a {
+    color: var(--blue-btn);
+    text-decoration: underline;
+}
+
 .plan-body__description::before {
     content: '';
     border: 1px solid var(--grey);
