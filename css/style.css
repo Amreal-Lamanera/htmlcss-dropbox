@@ -49,6 +49,14 @@
     font-size: 1em;
 }
 
+.section {
+    padding: 40px 0;
+}
+
+.grid {
+    display: grid;
+}
+
 /* Header */
 
 .main-header {
@@ -128,6 +136,14 @@ h1.container-large {
     padding: 20px 0;
 }
 
+.choice__grid.grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid__horizontal {
+    grid-column: span 3;
+}
+
 /* Footer */
 
 /* TODO: DEBUG STYLES */
@@ -143,4 +159,15 @@ h1.container-large {
 
 .debug section>* {
     border: 5px solid orangered;
+}
+
+.debug footer {
+    background-color: #000;
+    padding: 100px;
+}
+
+.debug .choice__grid.grid * {
+    padding: 100px;
+    color: #A2D39B;
+    border: 1px solid salmon;
 }
