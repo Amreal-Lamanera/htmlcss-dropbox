@@ -50,7 +50,11 @@
 }
 
 .section {
-    padding: 40px 0;
+    padding-bottom: 40px;
+}
+
+.section>* {
+    padding: 20px 0;
 }
 
 .grid {
@@ -132,12 +136,10 @@ h1.container-large {
     padding-top: 180px;
 }
 
-.section.dropbox-plan>* {
-    padding: 20px 0;
-}
-
-.choice__grid.grid {
+.plan__grid.grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-top: 20px;
 }
 
 .grid__horizontal {
@@ -166,8 +168,8 @@ h1.container-large {
     padding: 100px;
 }
 
-.debug .choice__grid.grid * {
-    padding: 100px;
-    color: #A2D39B;
+.debug .plan__grid.grid>* {
+    /* padding: 100px; */
+    background-color: #A2D39B;
     border: 1px solid salmon;
 }
