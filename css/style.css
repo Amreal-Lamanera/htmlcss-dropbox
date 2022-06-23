@@ -170,8 +170,8 @@ h1.container-large {
     padding: 20px 0;
 }
 
-.plan-body__description>* *:not(ul, i, button),
-.plan-body__main>* *:not(ul, i, button) {
+.plan-body__description>*>*,
+.plan-body__main>*>* {
     padding: 15px 0;
 }
 
@@ -212,7 +212,7 @@ li.flex {
     color: var(--blue-btn)
 }
 
-.plan-body.plan-body__main.flex {
+.plan-hor__main.flex {
     gap: 50px;
     align-items: flex-start;
 }
