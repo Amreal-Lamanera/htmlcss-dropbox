@@ -1,0 +1,35 @@
+/* Regole Generali */
+:root {
+    --blue: #0093CE;
+    --blue-btn: #0061FF;
+    --blue-light: #B4D0E7;
+    --blue-strong: #0D2481;
+    --bordeaux: #61082B;
+    --green: #A2D39B;
+    --yellow: #FFD830;
+    --red: #D5001F;
+    --red-light: #FF1C1C;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container-large {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-colverse {
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
