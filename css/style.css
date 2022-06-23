@@ -34,7 +34,36 @@
     display: flex;
 }
 
+.blue__btn {
+    background-color: var(--blue-btn);
+    padding: 10px 15px;
+}
+
+.blue__btn button {
+    color: #FFF;
+    font-size: 1em;
+}
+
 /* Header */
+.main-header {
+    padding: 30px 20px;
+}
+
+.logo__home {
+    padding-right: 30px;
+}
+
+.main-header .row {
+    align-items: center;
+}
+
+.nav-list .flex {
+    gap: 40px;
+}
+
+.nav-list:last-of-type {
+    margin-left: auto;
+}
 
 /* Main */
 
