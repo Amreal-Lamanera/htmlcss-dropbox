@@ -73,6 +73,8 @@
 
 /* Main */
 
+/* Hero */
+
 h1.container-large {
     font-family: 'Open Sans', sans-serif;
     font-size: 5em;
@@ -114,11 +116,17 @@ h1.container-large {
     top: 15px;
     left: 0;
     /* bottom: -100px; */
+    min-height: 100%;
 }
 
-/* .hero .row.row-colverse {
-    gap: 15px;
-} */
+/* Dropbox plan */
+.section.dropbox-plan {
+    padding-top: 180px;
+}
+
+.section.dropbox-plan>* {
+    padding: 20px 0;
+}
 
 /* Footer */
 
@@ -126,4 +134,13 @@ h1.container-large {
 
 .debug [class^="col"] {
     border: 2px dashed black;
+}
+
+.debug section {
+    border: 5px solid blue;
+    /* padding: 100px; */
+}
+
+.debug section>* {
+    border: 5px solid orangered;
 }
