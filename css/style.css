@@ -52,7 +52,7 @@
 /* Header */
 
 .main-header {
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 
 .logo__home {
@@ -91,6 +91,34 @@ h1.container-large {
 .col-8 {
     flex-basis: calc((100% / 12) * 8);
 }
+
+.hero .col-4 {
+    padding: 0 20px;
+}
+
+.hero .row.row-colverse {
+    gap: 15px;
+}
+
+.col .fa-solid.fa-arrow-down {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.hero .col.col-8 {
+    position: relative;
+}
+
+.hero .col.col-8 img {
+    position: absolute;
+    /* top: 15px; */
+    left: 0;
+    bottom: -100px;
+}
+
+/* .hero .row.row-colverse {
+    gap: 15px;
+} */
 
 /* Footer */
 
