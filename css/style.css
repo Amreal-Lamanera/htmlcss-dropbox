@@ -43,12 +43,12 @@
 .blue__btn {
     background-color: var(--blue-btn);
     padding: 10px 15px;
-}
-
-.blue__btn button {
+    cursor: pointer;
     color: #FFF;
     font-size: 1em;
+    white-space: nowrap;
 }
+
 
 .section {
     padding-bottom: 40px;
@@ -78,6 +78,7 @@
 
 .nav-list .flex {
     gap: 40px;
+    align-items: center;
 }
 
 .nav-list:last-of-type {
@@ -169,9 +170,17 @@ h1.container-large {
     padding: 20px 0;
 }
 
-.plan-body__description>* *:not(ul, i),
-.plan-body__main>* *:not(ul, i) {
+.plan-body__description>* *:not(ul, i, button),
+.plan-body__main>* *:not(ul, i, button) {
     padding: 15px 0;
+}
+
+.main__title h4 {
+    font-size: 2em;
+}
+
+.main__title .price {
+    font-weight: bold;
 }
 
 li.flex {
