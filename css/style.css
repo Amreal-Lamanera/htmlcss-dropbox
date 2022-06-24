@@ -40,13 +40,18 @@
     display: flex;
 }
 
-.blue__btn {
-    background-color: var(--blue-btn);
-    padding: 10px 15px;
-    cursor: pointer;
-    color: #FFF;
+.button {
     font-size: 1em;
     white-space: nowrap;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.blue__btn {
+    background-color: var(--blue-btn);
+    color: #FFF;
+    border-color: currentColor;
 }
 
 
@@ -299,6 +304,10 @@ li.flex {
 
 .partner .col-4 {
     padding-top: 60px;
+}
+
+.partner .col-4 * {
+    padding-bottom: 15px;
 }
 
 /* Footer */
