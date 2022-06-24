@@ -346,12 +346,16 @@ li.flex {
     padding: 70px 0;
 }
 
+.team__body .col-4 {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
 .grid-col.flex {
     justify-content: center;
     align-items: center;
     /* Per mantenere i blocchi di forma quadrata - sotto i 1250px circa si rompe il layout */
     aspect-ratio: 1/1;
-
 }
 
 .grid-col.flex.active {
@@ -375,9 +379,17 @@ li.flex {
 }
 
 .team__logo img {
-    width: 150px;
+    /* width: 150px; */
     filter: invert();
     object-fit: contain;
+}
+
+.team__logo__show {
+    padding: 50px;
+}
+
+.team__logo__show img {
+    width: 200px;
 }
 
 /* Footer */
@@ -414,5 +426,5 @@ li.flex {
 
 .debug .grid-col {
     border: 3px dashed violet;
-    min-height: 200px;
+    /* min-height: 200px; */
 }
