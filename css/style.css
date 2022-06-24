@@ -13,6 +13,14 @@
     --red-light: #FF1C1C;
 }
 
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -237,7 +245,7 @@ h2.container {
 }
 
 .main__title h4 {
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: 800;
 }
 
@@ -261,11 +269,11 @@ li.flex {
 
 
 .price__time,
-.plan__buy {
+.more__info {
     display: block;
 }
 
-.plan__buy a {
+.more__info a {
     color: var(--blue-btn);
     text-decoration: underline;
 }
@@ -321,6 +329,17 @@ li.flex {
 
 .dropbox-business .grid-row-3 {
     gap: 50px;
+}
+
+/* DB Businesss Team */
+
+.team-header.container {
+    padding-right: 350px;
+    padding-bottom: 150px;
+}
+
+.team__title {
+    padding: 70px 0;
 }
 
 /* Footer */
