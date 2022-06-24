@@ -99,15 +99,19 @@
 /* Main */
 
 /* Hero */
-
-h1.container-large {
-    font-size: 5em;
-    font-weight: 800;
-    padding: 80px 0 15px;
+.hero {
+    padding-top: 100px;
 }
 
-.col {
-    padding: 15px 0;
+h1.container-large {
+    font-size: 74px;
+    font-weight: 800;
+    margin-bottom: 48px;
+}
+
+.hero__content.row-colverse {
+    gap: 30px;
+    /* align-items: flex-start; */
 }
 
 .col-4 {
@@ -118,26 +122,19 @@ h1.container-large {
     flex-basis: calc((100% / 12) * 8);
 }
 
-.hero .col-4 {
-    padding: 0 20px;
-}
-
-.hero .row.row-colverse {
-    gap: 15px;
-}
-
-.col .fa-solid.fa-arrow-down {
+.hero__content .fa-solid.fa-arrow-down {
     font-size: 3em;
     font-weight: bold;
+    padding: 15px 0;
 }
 
-.hero .col.col-8 {
+.hero .hero__thumbnail.col-8 {
     position: relative;
 }
 
-.hero .col.col-8 img {
+.hero .hero__thumbnail.col-8 img {
     position: absolute;
-    top: 15px;
+    top: 0px;
     left: 0;
     /* bottom: -100px; */
     min-height: 100%;
@@ -145,7 +142,7 @@ h1.container-large {
 
 /* Dropbox plan */
 .section.dropbox-plan {
-    padding-top: 180px;
+    padding-top: 120px;
 }
 
 .grid-row.grid {
