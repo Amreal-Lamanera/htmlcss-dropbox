@@ -63,6 +63,10 @@
     display: grid;
 }
 
+.grid-row-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 /* TODO: vedere funzionamento!
 
 On mouse-over, add a grey background color
@@ -196,13 +200,12 @@ h2.container {
     padding-right: 64px;
 }
 
-.grid-row.grid {
-    grid-template-columns: repeat(3, 1fr);
+.plan-choice .grid-row-3 {
     gap: 50px;
     padding-top: 20px;
 }
 
-.grid-col {
+.plan-choice .grid-col {
     border: 1px solid var(--grey);
 }
 
@@ -307,7 +310,17 @@ li.flex {
 }
 
 .partner .col-4 * {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
+}
+
+/* DB Business */
+
+.business-title {
+    padding-bottom: 40px;
+}
+
+.dropbox-business .grid-row-3 {
+    gap: 50px;
 }
 
 /* Footer */
@@ -341,3 +354,8 @@ li.flex {
     background-color: #A2D39B;
     border: 1px solid salmon;
 } */
+
+.debug .dropbox-business .grid-col {
+    border: 3px dashed violet;
+    min-height: 200px;
+}
