@@ -72,7 +72,7 @@
     padding-right: 30px;
 }
 
-.main-header .row {
+.main-header.flex {
     align-items: center;
 }
 
@@ -188,8 +188,9 @@ li.flex {
 }
 
 .plan__list i {
-    line-height: 1em;
+    line-height: 1.4em;
 }
+
 
 .price__time,
 .plan__buy {
