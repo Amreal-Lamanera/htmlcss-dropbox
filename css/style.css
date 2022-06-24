@@ -79,6 +79,10 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.section:last-of-type {
+    padding-top: 150px;
+}
+
 /* TODO: vedere funzionamento!
 
 On mouse-over, add a grey background color
@@ -445,6 +449,32 @@ li.flex {
 .start__title {
     color: var(--bordeaux);
     padding-right: 60px;
+}
+
+/* DB FAQ */
+
+.faq__title {
+    padding-bottom: 60px;
+}
+
+.faq__list li {
+    padding: 40px 0;
+    border-top: 1px solid var(--grey);
+}
+
+.faq__list li:last-child {
+    border-bottom: 1px solid var(--grey);
+}
+
+.faq__list span {
+    display: inline-block;
+}
+
+.faq__list span:last-child {
+    margin-left: auto;
+    padding-right: 40px;
+    font-size: 12px;
+    cursor: pointer;
 }
 
 /* Footer */
