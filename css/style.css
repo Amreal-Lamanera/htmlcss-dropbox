@@ -335,7 +335,11 @@ li.flex {
     gap: 50px;
 }
 
-/* DB Businesss Team */
+/* DB Business Team */
+
+.dropbox-business-team {
+    padding-bottom: 0;
+}
 
 .team-header.container {
     padding-right: 350px;
@@ -420,6 +424,27 @@ li.flex {
 
 .logo__author {
     padding-top: 25px;
+}
+
+/* DB business start */
+
+.dropbox-business-start {
+    padding-top: 150px;
+}
+
+.dropbox-business-start .col-4.flex {
+    justify-content: center;
+    align-items: center;
+}
+
+.dropbox-business-start .button {
+    background-color: #FFF;
+    border: none;
+}
+
+.start__title {
+    color: var(--bordeaux);
+    padding-right: 60px;
 }
 
 /* Footer */
