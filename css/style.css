@@ -348,13 +348,12 @@ li.flex {
 
 .team__body .col-4 {
     aspect-ratio: 1/1;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .grid-col.flex {
     justify-content: center;
     align-items: center;
-    /* Per mantenere i blocchi di forma quadrata - sotto i 1250px circa si rompe il layout */
     aspect-ratio: 1/1;
 }
 
@@ -362,34 +361,65 @@ li.flex {
     border: 15px solid #D1E9CD;
 }
 
-.grid-col.flex:nth-child(1) {
+.col-left .grid-col.flex:nth-child(1) {
     background-color: var(--green);
 }
 
-.grid-col.flex:nth-child(2) {
+.col-left .grid-col.flex:nth-child(2) {
     background-color: var(--bordeaux);
 }
 
-.grid-col.flex:nth-child(3) {
+.col-left .grid-col.flex:nth-child(3) {
     background-color: var(--blue);
 }
 
-.grid-col.flex:nth-child(4) {
+.col-left .grid-col.flex:nth-child(4) {
     background-color: var(--red-light);
 }
 
+.col-right .grid-col.flex:nth-child(1) {
+    background-color: var(--red);
+}
+
+.col-right .grid-col.flex:nth-child(2) {
+    background-color: var(--blue-light);
+}
+
+.col-right .grid-col.flex:nth-child(3) {
+    background-color: var(--blue-strong);
+}
+
+.col-right .grid-col.flex:nth-child(4) {
+    background-color: var(--yellow);
+}
+
 .team__logo img {
-    /* width: 150px; */
+    width: 150px;
     filter: invert();
     object-fit: contain;
 }
 
-.team__logo__show {
-    padding: 50px;
+.team__show {
+    padding: 25px;
+    font-size: 14px;
+    background-color: #F6F6F6;
 }
 
-.team__logo__show img {
-    width: 200px;
+.team__logo__show {
+    width: 50%;
+    padding-bottom: 25px;
+}
+
+.logo__description::before {
+    content: "";
+    border-top: 1px solid var(--grey);
+    display: block;
+    width: 100px;
+    padding-bottom: 25px;
+}
+
+.logo__author {
+    padding-top: 25px;
 }
 
 /* Footer */
