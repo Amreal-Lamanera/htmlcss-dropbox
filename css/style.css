@@ -188,6 +188,10 @@ li.flex {
     align-items: flex-start;
 }
 
+.plan__list i {
+    line-height: 1em;
+}
+
 .price__time,
 .plan__buy {
     display: block;
