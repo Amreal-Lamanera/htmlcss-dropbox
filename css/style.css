@@ -65,11 +65,12 @@
 /* Header */
 
 .main-header {
-    padding: 20px 20px;
+    padding: 23px 18px;
+    gap: 18px;
 }
 
 .logo__home {
-    padding-right: 30px;
+    flex-shrink: 0;
 }
 
 .main-header.flex {
@@ -77,8 +78,18 @@
 }
 
 .nav-list .flex {
-    gap: 40px;
+    /* gap: 40px; */
     align-items: center;
+}
+
+.nav-list li {
+    padding: 0 16px;
+}
+
+.nav-list a {
+    line-height: 35px;
+    display: block;
+    white-space: nowrap;
 }
 
 .nav-list:last-of-type {
