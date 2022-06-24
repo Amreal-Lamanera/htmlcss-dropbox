@@ -75,6 +75,10 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-row-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 /* TODO: vedere funzionamento!
 
 On mouse-over, add a grey background color
@@ -342,6 +346,40 @@ li.flex {
     padding: 70px 0;
 }
 
+.grid-col.flex {
+    justify-content: center;
+    align-items: center;
+    /* Per mantenere i blocchi di forma quadrata - sotto i 1250px circa si rompe il layout */
+    aspect-ratio: 1/1;
+
+}
+
+.grid-col.flex.active {
+    border: 15px solid #D1E9CD;
+}
+
+.grid-col.flex:nth-child(1) {
+    background-color: var(--green);
+}
+
+.grid-col.flex:nth-child(2) {
+    background-color: var(--bordeaux);
+}
+
+.grid-col.flex:nth-child(3) {
+    background-color: var(--blue);
+}
+
+.grid-col.flex:nth-child(4) {
+    background-color: var(--red-light);
+}
+
+.team__logo img {
+    width: 150px;
+    filter: invert();
+    object-fit: contain;
+}
+
 /* Footer */
 
 /* TODO: DEBUG STYLES */
@@ -374,7 +412,7 @@ li.flex {
     border: 1px solid salmon;
 } */
 
-.debug .dropbox-business .grid-col {
+.debug .grid-col {
     border: 3px dashed violet;
     min-height: 200px;
 }
