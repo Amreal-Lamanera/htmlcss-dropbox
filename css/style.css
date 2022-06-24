@@ -51,7 +51,7 @@
 
 
 .section {
-    padding-bottom: 85px;
+    padding-bottom: 150px;
 }
 
 .grid {
@@ -184,6 +184,7 @@ h2.container {
 
 .section.dropbox-plan {
     padding-top: 160px;
+    font-size: 16px;
 }
 
 .plan__select span {
@@ -213,7 +214,7 @@ h2.container {
 }
 
 .plan-body {
-    padding: 0 15px;
+    padding: 0 30px;
     margin: 0 auto;
 }
 
@@ -228,7 +229,8 @@ h2.container {
 }
 
 .main__title h4 {
-    font-size: 2em;
+    font-size: 1.5em;
+    font-weight: 800;
 }
 
 .main__title .price {
@@ -242,6 +244,11 @@ li.flex {
 
 .plan__list i {
     line-height: 1.4em;
+}
+
+.plan-body .blue__btn {
+    width: 100%;
+    font-size: 14px;
 }
 
 
@@ -275,17 +282,23 @@ li.flex {
 }
 
 .plan-hor__btn {
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.plan-hor__btn .blue__btn {
+    padding: 15px 40px;
+    font-size: 14px;
 }
 
 /* DB Plan */
 
 .partner .col-8 {
-    padding: 0 25px;
+    padding-right: 50px;
 }
 
 .partner .col-4 {
-    padding: 30px 0;
+    padding-top: 60px;
 }
 
 /* Footer */
