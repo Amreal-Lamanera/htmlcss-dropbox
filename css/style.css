@@ -53,13 +53,12 @@ h3 {
     white-space: nowrap;
     padding: 10px 15px;
     cursor: pointer;
-    border: 1px solid black;
+    border: 1px solid currentColor;
 }
 
 .blue__btn {
     background-color: var(--blue-btn);
     color: #FFF;
-    border-color: currentColor;
 }
 
 
@@ -191,14 +190,10 @@ h1.container-large {
     position: absolute;
     top: 0px;
     left: 0;
-    /* bottom: -100px; */
-    min-height: 100%;
 }
 
 /* Dropbox plan */
-/* .section>* {
-    padding: 20px 0;
-} */
+
 
 /* SOLUZIONE ALTERNATIVA ALLA GRIGLIA:
 usare flex con: colonna orizzontale con flex-basis a 100%, atre colonne flex basis a 0 e flex grow a 1 */
@@ -275,7 +270,6 @@ li.flex {
     font-size: 14px;
 }
 
-
 .price__time,
 .more__info {
     display: block;
@@ -300,14 +294,36 @@ li.flex {
     color: var(--blue-btn)
 }
 
+.plan-body__main .title-container.flex {
+    justify-content: space-between;
+}
+
 .plan-hor__main.flex {
     gap: 50px;
     align-items: flex-start;
 }
 
-.plan-hor__btn {
+/* .plan-hor__btn {
     padding-top: 30px;
     padding-right: 30px;
+} */
+
+.title-container.flex,
+.title-container.flex .main__title {
+    padding: 0;
+}
+
+.plan-hor__main {
+    padding: 30px;
+}
+
+.plan-body__main .price {
+    padding-top: 0;
+    margin-bottom: 50px;
+}
+
+.plan-hor__btn .blue__btn {
+    width: auto;
 }
 
 .plan-hor__btn .blue__btn {
@@ -315,18 +331,34 @@ li.flex {
     font-size: 14px;
 }
 
-/* DB Plan */
-
-.partner .col-8 {
-    padding-right: 50px;
+.plan-hor__main .plan-body__main p {
+    max-width: 615px;
+    padding-top: 0;
 }
 
-.partner .col-4 {
-    padding-top: 60px;
+/* DB partner */
+
+.partner .row {
+    gap: 50px;
+    flex-wrap: nowrap;
 }
 
-.partner .col-4 * {
+.partner .col-60 {
+    flex-basis: calc(100% * 3 / 5);
+}
+
+.partner .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-top: 50px;
+}
+
+.partner .col * {
     padding-bottom: 20px;
+}
+
+.partner h2 {
+    font-size: 24px;
 }
 
 /* DB Business */
