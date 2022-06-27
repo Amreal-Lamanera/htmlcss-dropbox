@@ -530,10 +530,50 @@ li.flex {
 
 /* Footer */
 
+.main-footer {
+    background-color: #000;
+    border-bottom: 1px solid #9E9E9E;
+}
+
+/* Lang */
+
+.footer__language {
+    padding-bottom: 50px 0;
+}
+
+.footer__language::before {
+    content: '';
+    display: block;
+    border-top: 1px solid #999999;
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+.footer__language * {
+    color: #999999;
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+.footer__language #lang {
+    border: none;
+}
+
+#language__icon {
+    width: 12px;
+    filter: invert(0.5);
+}
+
+#lang option {
+    background-color: black;
+    border: none;
+}
+
+
 /* TODO: DEBUG STYLES */
 
 .debug [class^="col"] {
-    border: 2px dashed black;
+    border: 2px dashed #000;
 }
 
 .debug section {
