@@ -35,6 +35,10 @@ h3 {
     background-color: var(--blue-light);
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -54,12 +58,15 @@ h3 {
     /* white-space: nowrap; */
     padding: 10px 15px;
     cursor: pointer;
+}
+
+.border__btn {
     border: 1px solid currentColor;
 }
 
 .blue__btn {
-    background-color: var(--blue-btn);
     color: #FFF;
+    background-color: var(--blue-btn);
 }
 
 
@@ -495,7 +502,6 @@ li.flex {
 
 .dropbox-business-start .button {
     background-color: #FFF;
-    border: none;
 }
 
 .start__title {
@@ -533,12 +539,31 @@ li.flex {
 .main-footer {
     background-color: #000;
     border-bottom: 1px solid #9E9E9E;
+    color: #FFF;
+    font-size: 12px;
 }
+
+/* Links */
+
+.main-footer .row {
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.links__list .flex.row-colverse {
+    gap: 15px;
+}
+
+.links__list__title {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
 
 /* Lang */
 
 .footer__language {
-    padding-bottom: 50px 0;
+    padding-bottom: 50px;
 }
 
 .footer__language::before {
