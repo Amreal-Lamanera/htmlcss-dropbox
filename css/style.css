@@ -35,7 +35,7 @@ h3 {
     background-color: var(--blue-light);
 }
 
-a:hover {
+a:not([class^='button']):hover {
     text-decoration: underline;
 }
 
@@ -58,6 +58,7 @@ a:hover {
     /* white-space: nowrap; */
     padding: 10px 15px;
     cursor: pointer;
+    text-align: center;
 }
 
 .border__btn {
@@ -168,9 +169,7 @@ On mouse-over, add a grey background color
 }
 
 .nav-list a {
-    line-height: 35px;
     display: block;
-    white-space: nowrap;
 }
 
 .nav-list:last-child {
@@ -192,7 +191,7 @@ h1.container-large {
 
 .hero__content.row-colverse {
     gap: 30px;
-    /* align-items: flex-start; */
+    align-items: flex-start;
 }
 
 .hero__content .fa-solid.fa-arrow-down {
@@ -262,7 +261,7 @@ h2.container {
 }
 
 .plan-body__description>*>*,
-.plan-body__main>*>* {
+.plan-body__main>*>*:not([class^="button"]) {
     padding: 15px 0;
 }
 
@@ -287,6 +286,7 @@ li.flex {
 .plan-body .blue__btn {
     width: 100%;
     font-size: 14px;
+    display: inline-block;
 }
 
 .price__time,
@@ -362,14 +362,9 @@ li.flex {
     flex-wrap: nowrap;
 }
 
-.partner .col {
-    flex-basis: 0;
-    flex-grow: 1;
+.partner .col.flex.row-colverse {
     padding-top: 50px;
-}
-
-.partner .col * {
-    padding-bottom: 20px;
+    gap: 20px;
 }
 
 .partner h2 {
@@ -582,6 +577,7 @@ li.flex {
 
 .footer__language #lang {
     border: none;
+    cursor: pointer;
 }
 
 #language__icon {
