@@ -64,7 +64,24 @@ h3 {
 
 
 .section {
-    padding-bottom: 150px;
+    padding: 70px 0;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.col-4 {
+    flex-basis: calc((100% / 12) * 4);
+}
+
+.col-8 {
+    flex-basis: calc((100% / 12) * 8);
+}
+
+.col-60 {
+    flex-basis: calc(100% * 3 / 5);
 }
 
 .grid {
@@ -79,8 +96,8 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.section:last-of-type {
-    padding-top: 150px;
+section:last-of-type {
+    padding-top: 140px;
 }
 
 /* TODO: vedere funzionamento!
@@ -169,14 +186,6 @@ h1.container-large {
 .hero__content.row-colverse {
     gap: 30px;
     /* align-items: flex-start; */
-}
-
-.col-4 {
-    flex-basis: calc((100% / 12) * 4);
-}
-
-.col-8 {
-    flex-basis: calc((100% / 12) * 8);
 }
 
 .hero__content .fa-solid.fa-arrow-down {
@@ -346,10 +355,6 @@ li.flex {
     flex-wrap: nowrap;
 }
 
-.partner .col-60 {
-    flex-basis: calc(100% * 3 / 5);
-}
-
 .partner .col {
     flex-basis: 0;
     flex-grow: 1;
@@ -381,10 +386,6 @@ li.flex {
     padding-right: 350px;
 }
 
-.team__title {
-    padding: 70px 0;
-}
-
 .team__body .col-4 {
     aspect-ratio: 1/1;
 }
@@ -396,8 +397,57 @@ li.flex {
     cursor: pointer;
 }
 
-.grid-col.flex.active {
-    border: 15px solid #D1E9CD;
+.team__logo {
+    width: 55%;
+}
+
+.team__logo img {
+    filter: invert(1);
+}
+
+.team__show {
+    padding: 45px;
+    font-size: 14px;
+    background-color: #F6F6F6;
+    overflow: auto;
+    gap: 40px;
+}
+
+.team__logo__show img {
+    max-height: 100px;
+}
+
+.quote__description {
+    display: contents;
+}
+
+.quote__description::before {
+    content: "";
+    border-top: 1px solid var(--grey);
+    display: block;
+    width: 100px;
+}
+
+/* Gestione colori dei box logo */
+
+.grid-col.flex {
+    position: relative;
+}
+
+.grid-col.flex::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    opacity: 0;
+}
+
+.grid-col.flex.active::after {
+    opacity: 1;
 }
 
 .col-left .grid-col.flex:nth-child(1) {
@@ -432,45 +482,15 @@ li.flex {
     background-color: var(--yellow);
 }
 
-.team__logo img {
-    width: 150px;
-    filter: invert();
-    object-fit: contain;
-}
-
-.team__show {
-    padding: 25px;
-    font-size: 14px;
-    background-color: #F6F6F6;
-    overflow: auto;
-}
-
-.team__logo__show {
-    width: 50%;
-    padding-bottom: 25px;
-}
-
-.logo__description::before {
-    content: "";
-    border-top: 1px solid var(--grey);
-    display: block;
-    width: 100px;
-    padding-bottom: 25px;
-}
-
-.logo__author {
-    padding-top: 25px;
-}
-
 /* DB business start */
 
 .dropbox-business-start {
-    padding-top: 150px;
+    padding: 140px 0;
 }
 
 .dropbox-business-start .col-4.flex {
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .dropbox-business-start .button {
@@ -490,7 +510,7 @@ li.flex {
 }
 
 .faq__list li {
-    padding: 40px 0;
+    padding: 40px 40px 40px 0;
     border-top: 1px solid var(--grey);
 }
 
@@ -504,7 +524,6 @@ li.flex {
 
 .faq__list span:last-child {
     margin-left: auto;
-    padding-right: 40px;
     font-size: 12px;
     cursor: pointer;
 }
