@@ -50,7 +50,8 @@ h3 {
 
 .button {
     font-size: 1em;
-    white-space: nowrap;
+    /* tolgo il white-space ai button perché rompe il layout a pagina stretta */
+    /* white-space: nowrap; */
     padding: 10px 15px;
     cursor: pointer;
     border: 1px solid currentColor;
@@ -71,11 +72,11 @@ h3 {
 }
 
 .grid-row-3 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-row-2 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .section:last-of-type {
@@ -129,6 +130,8 @@ On mouse-over, add a grey background color
 
 .main-header.flex {
     align-items: center;
+    /* Per arrivare a 900px mi serve poter mandare a capo l'header */
+    flex-wrap: wrap;
 }
 
 .nav-list .flex {
@@ -146,7 +149,7 @@ On mouse-over, add a grey background color
     white-space: nowrap;
 }
 
-.nav-list:last-of-type {
+.nav-list:last-child {
     margin-left: auto;
 }
 
@@ -373,13 +376,9 @@ li.flex {
 
 /* DB Business Team */
 
-.dropbox-business-team {
-    padding-bottom: 0;
-}
 
 .team-header.container {
     padding-right: 350px;
-    padding-bottom: 150px;
 }
 
 .team__title {
@@ -388,7 +387,6 @@ li.flex {
 
 .team__body .col-4 {
     aspect-ratio: 1/1;
-    overflow: auto;
 }
 
 .grid-col.flex {
@@ -444,6 +442,7 @@ li.flex {
     padding: 25px;
     font-size: 14px;
     background-color: #F6F6F6;
+    overflow: auto;
 }
 
 .team__logo__show {
